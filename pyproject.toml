@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghidra-mcp"
+version = "0.1.0"
+description = "MCP server exposing Ghidra reverse engineering tools via PyGhidra"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.2.0,<2",
+    "pydantic>=2.0",
+    "pyghidra>=3.0",
+]
+
+[project.scripts]
+ghidra-mcp = "ghidra_mcp.server:main"

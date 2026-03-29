@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.eggs/
+.ralph/
+AGENTS.md
+PROMPT.md
+IMPLEMENTATION_PLAN.md
